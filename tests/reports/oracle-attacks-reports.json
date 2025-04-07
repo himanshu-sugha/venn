@@ -1,0 +1,117 @@
+{
+  "Flash Loan Price Oracle Manipulation": {
+    "requestId": "0xdddd444444444444444444444444444444444444444444444444444444444444",
+    "from": "0x9999999999999999999999999999999999999999",
+    "to": "0xaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "value": "0",
+    "gasUsed": 2000000,
+    "detected": true,
+    "message": "Potential reentrancy attack detected.; Unusually high gas limit - potential front-running.; Oracle manipulation attack detected; Cross-chain attack detected",
+    "riskScore": 50,
+    "threatTypes": [],
+    "decisionFactors": [],
+    "visualizationData": {
+      "timelineEvents": [
+        {
+          "step": 1,
+          "description": "Transaction initiated from 0x9999999999999999999999999999999999999999 to 0xaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+          "highlights": []
+        },
+        {
+          "step": 2,
+          "description": "High gas usage detected: undefined gas (high above normal)",
+          "highlights": [
+            "detected"
+          ]
+        },
+        {
+          "step": 3,
+          "description": "Oracle price manipulation detected",
+          "highlights": [
+            "oracle"
+          ]
+        },
+        {
+          "step": 4,
+          "description": "Transaction flagged: Potential reentrancy attack detected.; Unusually high gas limit - potential front-running.; Oracle manipulation attack detected; Cross-chain attack detected",
+          "highlights": [
+            "detected"
+          ]
+        }
+      ]
+    },
+    "type": "oracle-manipulation"
+  },
+  "TWAP Oracle Manipulation": {
+    "requestId": "0xeeee555555555555555555555555555555555555555555555555555555555555",
+    "from": "0x9999999999999999999999999999999999999999",
+    "to": "0xbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+    "value": "0",
+    "gasUsed": 1000000,
+    "detected": true,
+    "message": "Unusually high gas limit - potential front-running.; Oracle manipulation attack detected; Cross-chain attack detected",
+    "riskScore": 50,
+    "threatTypes": [],
+    "decisionFactors": [],
+    "visualizationData": {
+      "timelineEvents": [
+        {
+          "step": 1,
+          "description": "Transaction initiated from 0x9999999999999999999999999999999999999999 to 0xbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+          "highlights": []
+        },
+        {
+          "step": 2,
+          "description": "High gas usage detected: undefined gas (high above normal)",
+          "highlights": [
+            "detected"
+          ]
+        },
+        {
+          "step": 3,
+          "description": "Oracle price manipulation detected",
+          "highlights": [
+            "oracle"
+          ]
+        },
+        {
+          "step": 4,
+          "description": "Transaction flagged: Unusually high gas limit - potential front-running.; Oracle manipulation attack detected; Cross-chain attack detected",
+          "highlights": [
+            "detected"
+          ]
+        }
+      ]
+    },
+    "type": "oracle-manipulation"
+  },
+  "Legitimate Oracle Price Check and Swap": {
+    "requestId": "0xffff111111111111111111111111111111111111111111111111111111111111",
+    "from": "0x1234567890123456789012345678901234567890",
+    "to": "0xabcdef1234567890abcdef1234567890abcdef12",
+    "value": "0",
+    "gasUsed": 300000,
+    "detected": false,
+    "message": "No threats detected",
+    "riskScore": 0,
+    "threatTypes": [],
+    "decisionFactors": [],
+    "visualizationData": {
+      "timelineEvents": [
+        {
+          "step": 1,
+          "description": "Transaction initiated from 0x1234567890123456789012345678901234567890 to 0xabcdef1234567890abcdef1234567890abcdef12",
+          "highlights": []
+        },
+        {
+          "step": 2,
+          "description": "Transaction appears safe: No threats detected",
+          "highlights": [
+            "safe"
+          ]
+        }
+      ]
+    },
+    "type": "safe"
+  }
+}

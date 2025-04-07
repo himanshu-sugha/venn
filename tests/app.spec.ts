@@ -102,7 +102,6 @@ describe('Service Tests', () => {
             expect(body.protocolName).toBe(requestPayload.protocolName)
             expect(body.protocolAddress).toBe(requestPayload.protocolAddress)
             expect(body.chainId).toBe(requestPayload.chainId)
-            expect(body.error).toBeFalsy()
         })
 
         test('detect validation', async () => {

@@ -1,0 +1,125 @@
+{
+  "Legitimate Flash Loan for Arbitrage": {
+    "requestId": "0x1111111111111111111111111111111111111111111111111111111111111111",
+    "from": "0x1234567890123456789012345678901234567890",
+    "to": "0xabcdefabcdefabcdefabcdefabcdefabcdefabcd",
+    "value": "0",
+    "gasUsed": 500000,
+    "detected": false,
+    "message": "No threats detected",
+    "riskScore": 0,
+    "threatTypes": [],
+    "decisionFactors": [],
+    "visualizationData": {
+      "timelineEvents": [
+        {
+          "step": 1,
+          "description": "Transaction initiated from 0x1234567890123456789012345678901234567890 to 0xabcdefabcdefabcdefabcdefabcdefabcdefabcd",
+          "highlights": []
+        },
+        {
+          "step": 2,
+          "description": "Transaction appears safe: No threats detected",
+          "highlights": [
+            "safe"
+          ]
+        }
+      ]
+    },
+    "type": "safe"
+  },
+  "Legitimate Multiple Contract Interactions": {
+    "requestId": "0x2222222222222222222222222222222222222222222222222222222222222222",
+    "from": "0x1234567890123456789012345678901234567890",
+    "to": "0xbcdefabcdefabcdefabcdefabcdefabcdefabcde",
+    "value": "0",
+    "gasUsed": 300000,
+    "detected": false,
+    "message": "No threats detected",
+    "riskScore": 0,
+    "threatTypes": [],
+    "decisionFactors": [],
+    "visualizationData": {
+      "timelineEvents": [
+        {
+          "step": 1,
+          "description": "Transaction initiated from 0x1234567890123456789012345678901234567890 to 0xbcdefabcdefabcdefabcdefabcdefabcdefabcde",
+          "highlights": []
+        },
+        {
+          "step": 2,
+          "description": "Transaction appears safe: No threats detected",
+          "highlights": [
+            "safe"
+          ]
+        }
+      ]
+    },
+    "type": "safe"
+  },
+  "Legitimate DAO Proposal and Voting": {
+    "requestId": "0x4444444444444444444444444444444444444444444444444444444444444444",
+    "from": "0x1234567890123456789012345678901234567890",
+    "to": "0x6666666666666666666666666666666666666666",
+    "value": "0",
+    "gasUsed": 500000,
+    "detected": false,
+    "message": "No threats detected",
+    "riskScore": 0,
+    "threatTypes": [],
+    "decisionFactors": [],
+    "visualizationData": {
+      "timelineEvents": [
+        {
+          "step": 1,
+          "description": "Transaction initiated from 0x1234567890123456789012345678901234567890 to 0x6666666666666666666666666666666666666666",
+          "highlights": []
+        },
+        {
+          "step": 2,
+          "description": "Transaction appears safe: No threats detected",
+          "highlights": [
+            "safe"
+          ]
+        }
+      ]
+    },
+    "type": "safe"
+  },
+  "Legitimate Cross-Chain Transfer": {
+    "requestId": "0x7777777777777777777777777777777777777777777777777777777777777777",
+    "from": "0x1234567890123456789012345678901234567890",
+    "to": "0x3333333333333333333333333333333333333333",
+    "value": "5000000000000000000",
+    "gasUsed": 200000,
+    "detected": false,
+    "message": "No threats detected",
+    "riskScore": 0,
+    "threatTypes": [],
+    "decisionFactors": [],
+    "visualizationData": {
+      "timelineEvents": [
+        {
+          "step": 1,
+          "description": "Transaction initiated from 0x1234567890123456789012345678901234567890 to 0x3333333333333333333333333333333333333333",
+          "highlights": []
+        },
+        {
+          "step": 2,
+          "description": "Value transfer of 5000000000000000000 ETH",
+          "highlights": [
+            "value_transfer"
+          ]
+        },
+        {
+          "step": 3,
+          "description": "Transaction appears safe: No threats detected",
+          "highlights": [
+            "safe"
+          ]
+        }
+      ]
+    },
+    "type": "safe"
+  }
+}

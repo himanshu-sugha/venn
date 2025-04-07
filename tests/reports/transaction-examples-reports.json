@@ -1,0 +1,131 @@
+{
+  "Legitimate ETH Transfer": {
+    "requestId": "0x1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef",
+    "from": "0x1234567890123456789012345678901234567890",
+    "to": "0x2234567890123456789012345678901234567890",
+    "value": "5000000000000000000",
+    "gasUsed": 21000,
+    "detected": false,
+    "message": "No threats detected",
+    "riskScore": 0,
+    "threatTypes": [],
+    "decisionFactors": [],
+    "visualizationData": {
+      "timelineEvents": [
+        {
+          "step": 1,
+          "description": "Transaction initiated from 0x1234567890123456789012345678901234567890 to 0x2234567890123456789012345678901234567890",
+          "highlights": []
+        },
+        {
+          "step": 2,
+          "description": "Value transfer of 5000000000000000000 ETH",
+          "highlights": [
+            "value_transfer"
+          ]
+        },
+        {
+          "step": 3,
+          "description": "Transaction appears safe: No threats detected",
+          "highlights": [
+            "safe"
+          ]
+        }
+      ]
+    },
+    "type": "safe"
+  },
+  "Suspicious Flash Loan and Unlimited Approval": {
+    "requestId": "0xabcdef1234567890abcdef1234567890abcdef1234567890abcdef1234567890",
+    "from": "0x9876543210987654321098765432109876543210",
+    "to": "0x8765432109876543210987654321098765432109",
+    "value": "100000000000000000000",
+    "gasUsed": 2000000,
+    "detected": true,
+    "message": "High gas transfer - potential front-running.; Unusually high transaction value detected.; Flash loan pattern detected - verify legitimacy.; Cross-chain attack detected",
+    "riskScore": 50,
+    "threatTypes": [],
+    "decisionFactors": [],
+    "visualizationData": {
+      "timelineEvents": [
+        {
+          "step": 1,
+          "description": "Transaction initiated from 0x9876543210987654321098765432109876543210 to 0x8765432109876543210987654321098765432109",
+          "highlights": []
+        },
+        {
+          "step": 2,
+          "description": "Value transfer of 100000000000000000000 ETH",
+          "highlights": [
+            "value_transfer"
+          ]
+        },
+        {
+          "step": 3,
+          "description": "Flash loan pattern detected with known flash loan signature",
+          "highlights": [
+            "flash_loan"
+          ]
+        },
+        {
+          "step": 4,
+          "description": "High gas usage detected: undefined gas (high above normal)",
+          "highlights": [
+            "detected"
+          ]
+        },
+        {
+          "step": 5,
+          "description": "Transaction flagged: High gas transfer - potential front-running.; Unusually high transaction value detected.; Flash loan pattern detected - verify legitimacy.; Cross-chain attack detected",
+          "highlights": [
+            "detected"
+          ]
+        }
+      ]
+    },
+    "type": "flash-loan"
+  },
+  "Governance Attack with Treasury Drain": {
+    "requestId": "0xfedcba0987654321fedcba0987654321fedcba0987654321fedcba0987654321",
+    "from": "0x5555555555555555555555555555555555555555",
+    "to": "0x6666666666666666666666666666666666666666",
+    "value": "0",
+    "gasUsed": 5000000,
+    "detected": true,
+    "message": "Unusually high gas limit - potential front-running.; Flash loan pattern detected - verify legitimacy.; Suspicious governance activity detected; Cross-chain attack detected",
+    "riskScore": 50,
+    "threatTypes": [],
+    "decisionFactors": [],
+    "visualizationData": {
+      "timelineEvents": [
+        {
+          "step": 1,
+          "description": "Transaction initiated from 0x5555555555555555555555555555555555555555 to 0x6666666666666666666666666666666666666666",
+          "highlights": []
+        },
+        {
+          "step": 2,
+          "description": "Flash loan pattern detected with known flash loan signature",
+          "highlights": [
+            "flash_loan"
+          ]
+        },
+        {
+          "step": 3,
+          "description": "High gas usage detected: undefined gas (high above normal)",
+          "highlights": [
+            "detected"
+          ]
+        },
+        {
+          "step": 4,
+          "description": "Transaction flagged: Unusually high gas limit - potential front-running.; Flash loan pattern detected - verify legitimacy.; Suspicious governance activity detected; Cross-chain attack detected",
+          "highlights": [
+            "detected"
+          ]
+        }
+      ]
+    },
+    "type": "flash-loan"
+  }
+}

@@ -1,0 +1,175 @@
+{
+  "Malicious Approve (Phishing)": {
+    "requestId": "0xhhhh888888888888888888888888888888888888888888888888888888888888",
+    "from": "0xaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "to": "0xbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+    "value": "0",
+    "gasUsed": 100000,
+    "detected": true,
+    "message": "Unlimited token approval detected - potential phishing.; Unusually high gas limit - potential front-running.; Cross-chain attack detected",
+    "riskScore": 50,
+    "threatTypes": [],
+    "decisionFactors": [],
+    "visualizationData": {
+      "timelineEvents": [
+        {
+          "step": 1,
+          "description": "Transaction initiated from 0xaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa to 0xbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+          "highlights": []
+        },
+        {
+          "step": 2,
+          "description": "High gas usage detected: undefined gas (high above normal)",
+          "highlights": [
+            "detected"
+          ]
+        },
+        {
+          "step": 3,
+          "description": "Transaction flagged: Unlimited token approval detected - potential phishing.; Unusually high gas limit - potential front-running.; Cross-chain attack detected",
+          "highlights": [
+            "detected"
+          ]
+        }
+      ]
+    },
+    "type": "suspicious"
+  },
+  "Reentrancy Attack Pattern": {
+    "requestId": "0xiiii999999999999999999999999999999999999999999999999999999999999",
+    "from": "0xdddddddddddddddddddddddddddddddddddddddd",
+    "to": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
+    "value": "0",
+    "gasUsed": 500000,
+    "detected": true,
+    "message": "Potential reentrancy attack detected.; Unusually high gas limit - potential front-running.; Cross-chain attack detected",
+    "riskScore": 50,
+    "threatTypes": [],
+    "decisionFactors": [],
+    "visualizationData": {
+      "timelineEvents": [
+        {
+          "step": 1,
+          "description": "Transaction initiated from 0xdddddddddddddddddddddddddddddddddddddddd to 0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
+          "highlights": []
+        },
+        {
+          "step": 2,
+          "description": "High gas usage detected: undefined gas (high above normal)",
+          "highlights": [
+            "detected"
+          ]
+        },
+        {
+          "step": 3,
+          "description": "Transaction flagged: Potential reentrancy attack detected.; Unusually high gas limit - potential front-running.; Cross-chain attack detected",
+          "highlights": [
+            "detected"
+          ]
+        }
+      ]
+    },
+    "type": "suspicious"
+  },
+  "Flash Loan Attack Pattern": {
+    "requestId": "0xjjjjaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "from": "0xffffffffffffffffffffffffffffffffffffffffff",
+    "to": "0xgggggggggggggggggggggggggggggggggggggggg",
+    "value": "0",
+    "gasUsed": 2000000,
+    "detected": true,
+    "message": "Potential reentrancy attack detected.; Unusually high gas limit - potential front-running.; Cross-chain attack detected",
+    "riskScore": 50,
+    "threatTypes": [],
+    "decisionFactors": [],
+    "visualizationData": {
+      "timelineEvents": [
+        {
+          "step": 1,
+          "description": "Transaction initiated from 0xffffffffffffffffffffffffffffffffffffffffff to 0xgggggggggggggggggggggggggggggggggggggggg",
+          "highlights": []
+        },
+        {
+          "step": 2,
+          "description": "High gas usage detected: undefined gas (high above normal)",
+          "highlights": [
+            "detected"
+          ]
+        },
+        {
+          "step": 3,
+          "description": "Transaction flagged: Potential reentrancy attack detected.; Unusually high gas limit - potential front-running.; Cross-chain attack detected",
+          "highlights": [
+            "detected"
+          ]
+        }
+      ]
+    },
+    "type": "suspicious"
+  },
+  "Legitimate Flash Loan for Arbitrage Trade": {
+    "requestId": "0xbbbb444444444444444444444444444444444444444444444444444444444444",
+    "from": "0x1234567890123456789012345678901234567890",
+    "to": "0xabcd1234abcd1234abcd1234abcd1234abcd1234",
+    "value": "0",
+    "gasUsed": 600000,
+    "detected": true,
+    "message": "Flash loan pattern detected - verify legitimacy.",
+    "riskScore": 50,
+    "threatTypes": [],
+    "decisionFactors": [],
+    "visualizationData": {
+      "timelineEvents": [
+        {
+          "step": 1,
+          "description": "Transaction initiated from 0x1234567890123456789012345678901234567890 to 0xabcd1234abcd1234abcd1234abcd1234abcd1234",
+          "highlights": []
+        },
+        {
+          "step": 2,
+          "description": "Flash loan pattern detected",
+          "highlights": [
+            "flash_loan"
+          ]
+        },
+        {
+          "step": 3,
+          "description": "Transaction flagged: Flash loan pattern detected - verify legitimacy.",
+          "highlights": [
+            "detected"
+          ]
+        }
+      ]
+    },
+    "type": "flash-loan"
+  },
+  "Legitimate Token Approval (Limited)": {
+    "requestId": "0xcccc444444444444444444444444444444444444444444444444444444444444",
+    "from": "0x1234567890123456789012345678901234567890",
+    "to": "0x9876543210fedcba9876543210fedcba98765432",
+    "value": "0",
+    "gasUsed": 80000,
+    "detected": false,
+    "message": "No threats detected",
+    "riskScore": 0,
+    "threatTypes": [],
+    "decisionFactors": [],
+    "visualizationData": {
+      "timelineEvents": [
+        {
+          "step": 1,
+          "description": "Transaction initiated from 0x1234567890123456789012345678901234567890 to 0x9876543210fedcba9876543210fedcba98765432",
+          "highlights": []
+        },
+        {
+          "step": 2,
+          "description": "Transaction appears safe: No threats detected",
+          "highlights": [
+            "safe"
+          ]
+        }
+      ]
+    },
+    "type": "safe"
+  }
+}

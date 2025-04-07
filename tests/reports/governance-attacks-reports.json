@@ -1,0 +1,103 @@
+{
+  "Flash Loan Followed by Governance Proposal": {
+    "requestId": "0xaaaa111111111111111111111111111111111111111111111111111111111111",
+    "from": "0x8888888888888888888888888888888888888888",
+    "to": "0xaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "value": "0",
+    "gasUsed": 1000000,
+    "detected": true,
+    "message": "Potential reentrancy attack detected.; Unusually high gas limit - potential front-running.; Cross-chain attack detected",
+    "riskScore": 50,
+    "threatTypes": [],
+    "decisionFactors": [],
+    "visualizationData": {
+      "timelineEvents": [
+        {
+          "step": 1,
+          "description": "Transaction initiated from 0x8888888888888888888888888888888888888888 to 0xaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+          "highlights": []
+        },
+        {
+          "step": 2,
+          "description": "High gas usage detected: undefined gas (high above normal)",
+          "highlights": [
+            "detected"
+          ]
+        },
+        {
+          "step": 3,
+          "description": "Transaction flagged: Potential reentrancy attack detected.; Unusually high gas limit - potential front-running.; Cross-chain attack detected",
+          "highlights": [
+            "detected"
+          ]
+        }
+      ]
+    },
+    "type": "suspicious"
+  },
+  "Treasury Drain via Malicious Proposal": {
+    "requestId": "0xcccc333333333333333333333333333333333333333333333333333333333333",
+    "from": "0xcccccccccccccccccccccccccccccccccccccccc",
+    "to": "0xdddddddddddddddddddddddddddddddddddddddd",
+    "value": "0",
+    "gasUsed": 5000000,
+    "detected": true,
+    "message": "Potential reentrancy attack detected.; Unusually high gas limit - potential front-running.; Cross-chain attack detected",
+    "riskScore": 50,
+    "threatTypes": [],
+    "decisionFactors": [],
+    "visualizationData": {
+      "timelineEvents": [
+        {
+          "step": 1,
+          "description": "Transaction initiated from 0xcccccccccccccccccccccccccccccccccccccccc to 0xdddddddddddddddddddddddddddddddddddddddd",
+          "highlights": []
+        },
+        {
+          "step": 2,
+          "description": "High gas usage detected: undefined gas (high above normal)",
+          "highlights": [
+            "detected"
+          ]
+        },
+        {
+          "step": 3,
+          "description": "Transaction flagged: Potential reentrancy attack detected.; Unusually high gas limit - potential front-running.; Cross-chain attack detected",
+          "highlights": [
+            "detected"
+          ]
+        }
+      ]
+    },
+    "type": "suspicious"
+  },
+  "Legitimate Governance Proposal Execution": {
+    "requestId": "0xbbbb222222222222222222222222222222222222222222222222222222222222",
+    "from": "0x1234567890123456789012345678901234567890",
+    "to": "0x5555555555555555555555555555555555555555",
+    "value": "0",
+    "gasUsed": 500000,
+    "detected": false,
+    "message": "No threats detected",
+    "riskScore": 0,
+    "threatTypes": [],
+    "decisionFactors": [],
+    "visualizationData": {
+      "timelineEvents": [
+        {
+          "step": 1,
+          "description": "Transaction initiated from 0x1234567890123456789012345678901234567890 to 0x5555555555555555555555555555555555555555",
+          "highlights": []
+        },
+        {
+          "step": 2,
+          "description": "Transaction appears safe: No threats detected",
+          "highlights": [
+            "safe"
+          ]
+        }
+      ]
+    },
+    "type": "safe"
+  }
+}

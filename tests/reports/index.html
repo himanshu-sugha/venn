@@ -1,0 +1,113 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Venn Detection Reports Navigation</title>
+      <style>
+        body {
+          font-family: Arial, sans-serif;
+          line-height: 1.6;
+          margin: 0;
+          padding: 20px;
+          color: #333;
+          max-width: 1200px;
+          margin: 0 auto;
+        }
+        h1, h2 {
+          color: #2c3e50;
+        }
+        .reports-grid {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+          gap: 20px;
+          margin-top: 20px;
+        }
+        .report-card {
+          border: 1px solid #ddd;
+          border-radius: 10px;
+          padding: 20px;
+          box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+          transition: transform 0.3s ease;
+        }
+        .report-card:hover {
+          transform: translateY(-5px);
+        }
+        .report-card h3 {
+          margin-top: 0;
+          color: #2980b9;
+        }
+        .report-card p {
+          margin-bottom: 15px;
+        }
+        .report-link {
+          display: inline-block;
+          background-color: #3498db;
+          color: white;
+          padding: 8px 16px;
+          border-radius: 4px;
+          text-decoration: none;
+          font-weight: bold;
+        }
+        .report-link:hover {
+          background-color: #2980b9;
+        }
+        .footer {
+          margin-top: 40px;
+          padding-top: 20px;
+          border-top: 1px solid #eee;
+          text-align: center;
+          font-size: 0.9em;
+          color: #7f8c8d;
+        }
+      </style>
+    </head>
+    <body>
+      <h1>Venn: Transaction Security Detection Visualization</h1>
+      <p>This page provides links to visualization reports for different categories of blockchain transactions and their security analysis results.</p>
+      
+      <div class="reports-grid">
+        <div class="report-card">
+          <h3>Comprehensive Report</h3>
+          <p>A complete report containing all test cases across all categories.</p>
+          <a href="comprehensive-test-cases-report.html" class="report-link">View Report</a>
+        </div>
+        
+        <div class="report-card">
+          <h3>Legitimate Transactions</h3>
+          <p>Examples of legitimate transactions that should not trigger security alerts.</p>
+          <a href="legitimate-transactions-report.html" class="report-link">View Report</a>
+        </div>
+        
+        <div class="report-card">
+          <h3>Governance Attacks</h3>
+          <p>Examples of governance manipulation attacks including flash loan voting, treasury drains, etc.</p>
+          <a href="governance-attacks-report.html" class="report-link">View Report</a>
+        </div>
+        
+        <div class="report-card">
+          <h3>Oracle Attacks</h3>
+          <p>Examples of price oracle manipulation attacks including TWAP manipulation, price sandwiching, etc.</p>
+          <a href="oracle-attacks-report.html" class="report-link">View Report</a>
+        </div>
+        
+        <div class="report-card">
+          <h3>Cross-Chain Attacks</h3>
+          <p>Examples of cross-chain attacks including bridge exploits, validation bypasses, etc.</p>
+          <a href="cross-chain-attacks-report.html" class="report-link">View Report</a>
+        </div>
+        
+        <div class="report-card">
+          <h3>General Attacks</h3>
+          <p>Examples of other common attack patterns including reentrancy, flash loan exploits, phishing, etc.</p>
+          <a href="general-attacks-report.html" class="report-link">View Report</a>
+        </div>
+      </div>
+      
+      <div class="footer">
+        <p>Venn Security Detection Framework - Transaction Security Visualization</p>
+      </div>
+    </body>
+    </html>
+    

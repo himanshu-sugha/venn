@@ -1,1 +1,1 @@
-export * from './detect-response'
+export * from './detection-response'

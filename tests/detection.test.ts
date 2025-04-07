@@ -312,8 +312,8 @@ describe('Blockchain Security Detection Tests', () => {
       expect(result.detected).toBe(true);
       expect(result.detectionDetails.reentrancy).toBeDefined();
       // Check for specific pattern
-      const patterns = result.detectionDetails.reentrancy.suspiciousPatterns;
-      expect(patterns.some((p: any) => p.pattern === 'multiple_withdrawals')).toBe(true);
+      const patterns = result.detectionDetails.reentrancy?.suspiciousPatterns;
+      expect(patterns?.some((p: any) => p.pattern === 'multiple_withdrawals')).toBe(true);
     });
 
     test('should detect write-after-call pattern', () => {
